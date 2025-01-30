@@ -1,10 +1,10 @@
 # SlotMachineComponent
 
-&nbsp;
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-Jetpack Compose로 구현한 **슬롯머신 스타일 숫자 애니메이션 컴포넌트**입니다.  
-
-슬롯머신처럼 위/아래로 말려 들어가는 애니메이션을 제공합니다.
+> Jetpack Compose로 구현한 **슬롯머신 스타일 숫자 애니메이션 컴포넌트**입니다.  
+> 
+> 슬롯머신처럼 위/아래로 말려 들어가는 애니메이션을 제공합니다.
 
 &nbsp;
 
