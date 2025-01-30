@@ -14,7 +14,6 @@
 
 &nbsp;
 
-(슬롯머신이 동작하는 모습의 GIF나 스크린샷을 첨부할 수 있다면 여기에 삽입)
 
 &nbsp;
 
@@ -32,6 +31,40 @@
   - **숫자 폰트 크기**(`slotFontSize`), **숫자 색상**(`slotNumberColor`), **슬롯 배경 색상**(`backgroundColor`), **모양(Shape)** 등  
   - `Modifier`를 통해 **크기, 패딩, 배경 등** 자유로운 변경 가능  
 - **첫 설정 숫자 자릿수에 맞춰 UI 조정**
+
+&nbsp;
+
+---
+
+## 프로젝트 구조 예시
+
+&nbsp;
+
+```css
+SlotMachineComponent
+├── app
+│   └── src
+│       └── main
+│           ├── java/com/loyalflower/slotmachinecomponent
+│           │   ├── MainActivity.kt
+│           │   ├── MainScreen.kt
+│           │   ├── animationLogic
+│           │       ├── runDecrementAnimation.kt
+│           │       └── runIncrementAnimation.kt
+│           │   └── slotMachineUI
+│           │       ├── SlotMachine.kt
+│           │       └── SlotColumn.kt
+│           └── AndroidManifest.xml
+├── build.gradle
+└── README.md
+```
+
+- **MainActivity.kt**: 앱 실행 진입점, setContent { MainScreen() }
+- **MainScreen.kt**: 예시 UI (TextField, Button, SlotMachine 배치)
+- **SlotMachine.kt**: 슬롯머신 UI 로직 (자릿수 계산, Animatable 리스트 관리)
+- **SlotColumn.kt**: 슬롯 1칸(자리)을 그리는 Composable
+- **runIncrementAnimation.kt**: 증가 애니메이션 로직
+- **runDecrementAnimation.kt**: 감소 애니메이션 로직
 
 &nbsp;
   
@@ -86,40 +119,6 @@ fun MainScreen() {
 - **targetNumber**: 목표 숫자 (TextField에서 입력받은 값)
 - **animationOn**: true가 되면 내부적으로 증가/감소 애니메이션 실행
 - **animationFinish**: 애니메이션이 모두 끝난 뒤 실행할 콜백
-
-&nbsp;
-
----
-
-## 프로젝트 구조 예시
-
-&nbsp;
-
-```css
-SlotMachineComponent
-├── app
-│   └── src
-│       └── main
-│           ├── java/com/loyalflower/slotmachinecomponent
-│           │   ├── MainActivity.kt
-│           │   ├── MainScreen.kt
-│           │   ├── animationLogic
-│           │       ├── runDecrementAnimation.kt
-│           │       └── runIncrementAnimation.kt
-│           │   └── slotMachineUI
-│           │       ├── SlotMachine.kt
-│           │       └── SlotColumn.kt
-│           └── AndroidManifest.xml
-├── build.gradle
-└── README.md
-```
-
-- **MainActivity.kt**: 앱 실행 진입점, setContent { MainScreen() }
-- **MainScreen.kt**: 예시 UI (TextField, Button, SlotMachine 배치)
-- **SlotMachine.kt**: 슬롯머신 UI 로직 (자릿수 계산, Animatable 리스트 관리)
-- **SlotColumn.kt**: 슬롯 1칸(자리)을 그리는 Composable
-- **runIncrementAnimation.kt**: 증가 애니메이션 로직
-- **runDecrementAnimation.kt**: 감소 애니메이션 로직
 
 &nbsp;
 
