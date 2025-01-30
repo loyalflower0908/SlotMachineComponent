@@ -14,9 +14,9 @@
 
 &nbsp;
 
-<video src="https://github.com/loyalflower0908/SlotMachineComponent/raw/master/53975to53898.mp4" 
-       controls="controls" 
-       style="max-width: 600px;">
+<video src="https://github.com/loyalflower0908/SlotMachineComponent/raw/refs/heads/master/53975to53898.mp4"
+  controls="controls"
+  style="max-width: 600px;">
   Your browser does not support the video tag.
 </video>
 
