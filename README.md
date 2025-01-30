@@ -10,10 +10,15 @@
 
 ---
 
-## 데모 이미지
+## 데모 비디오
 
 &nbsp;
 
+<video src="https://github.com/loyalflower0908/SlotMachineComponent/raw/master/53975to53898.mp4" 
+       controls="controls" 
+       style="max-width: 600px;">
+  Your browser does not support the video tag.
+</video>
 
 &nbsp;
 
